@@ -2,6 +2,7 @@
 
 #include "Application.h"
 #include "Renderer2D.h"
+#include "Input.h"
 
 class Application2D : public aie::Application {
 public:
@@ -13,7 +14,10 @@ public:
 	virtual void shutdown();
 
 	virtual void update(float deltaTime);
+	void DemoUpdate(aie::Input* input, float deltaTime);
+	
 	virtual void draw();
+	void DemoDraw();
 
 protected:
 
